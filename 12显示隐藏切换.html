@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="隐藏" id="btn"/>
+
+<div id="box"></div>
+<script>
+    //点击按钮 实现显示隐藏切换
+    //点击按钮 隐藏盒子
+    var btn = document.getElementById("btn");
+    var box = document.getElementById("box");
+    btn.onclick = function () {
+        if (btn.value === "隐藏") {//如果此时按钮中的文字是隐藏 就应该隐藏盒子
+            box.className = "hide";
+            this.value = "显示";
+        } else {
+            box.className = "show";
+            this.value = "隐藏";
+        }
+    };
+</script>
+</body>
+</html>

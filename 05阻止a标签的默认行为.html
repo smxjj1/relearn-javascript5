@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<!--<div>
+   a href="http://www.baidu.com">a标签的默认行为就是跳转</a>
+   <a href="http://www.baidu.com" onclick="return false;">阻止默认行为</a>
+   <a href="http://www.baidu.com" onclick="return test(16);">未满十八岁禁止入内</a>
+   </div>-->
+<a href="http://www.baidu.com">a标签主要的功能是跳转页面</a>
+<a href="http://www.baidu.com" onclick="return false">添加 onclick="return false"才不会跳转 </a>
+<a href="http://www.baidu.com" id="demo" title=52> 怎么去判断这个标签能不能跳转 </a>
+
+<script>
+    /* function test(age) {
+     if (age > 18) {
+     alert("欢迎");
+     } else {
+     alert("禁止");
+     return false;
+     }
+     }*/
+    var demo = document.getElementById("demo");
+    demo.onclick = function test() {
+        if (demo.title > 18) {
+            alert("欢迎光临");
+        } else {
+            alert("禁止入内");
+            return false;
+        }
+    }
+    //html 和Js分离写法；将 onclick作为一个对象属性看待。
+    //先找出对象，并用一个人变量接收
+    /*var demo = document.getElementById("demo");
+     demo.onclick = function () {
+     if(demo.alt>18){
+     alert("请充值")
+     }else{
+     alert("禁止入内")
+     return false;
+     }
+
+     }*/
+
+</script>
+</body>
+</html>

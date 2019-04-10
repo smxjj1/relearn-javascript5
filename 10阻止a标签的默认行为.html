@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<a href="http://www.baidu.com">a标签的默认行为就是跳转</a>
+<a href="http://www.baidu.com" onclick="return false;">阻止默认行为</a>
+<a href="http://www.baidu.com" onclick="return test(16);">未满十八岁禁止入内</a>
+<a href="http://www.baidu.com" id="demo">demo</a>
+<script>
+    var demo = document.getElementById("demo");
+    //<标签 事件="事件处理程序">
+    //事件源.事件 = function(){ 事件处理程序 };
+    demo.onclick = function () {
+        //return test(16);
+        return false;
+    };
+
+    function test(age) {
+        if (age > 18) {
+            alert("欢迎");
+        } else {
+            alert("禁止");
+            return false;
+        }
+    }
+</script>
+</body>
+</html>

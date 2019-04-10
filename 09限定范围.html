@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="demo1">
+    <input type="button" value="按钮"/>
+    <input type="button" value="按钮"/>
+</div>
+<div id="demo2">
+    <input type="button" id="btn" value="按钮"/>
+    <input type="button" value="按钮"/>
+</div>
+<script>
+    //getElementsByTagName 可以被 document 调用 表示获取页面上 所有这一类型的标签
+    //var inputs = document.getElementsByTagName("input");
+    //console.log(inputs);
+    //getElementsByTagName 还可以被 普通的元素对象调用 表示获取这个元素对象内部的这一类型的标签
+    //var demo2 = document.getElementById("demo2");
+    //var inputs = demo2.getElementsByTagName("input");
+    //console.log(inputs);
+    //getElementById 不能被普通的元素对象调用 只能被document调用
+    var demo2 = document.getElementById("demo2");
+    var btn = demo2.getElementById("btn");
+    console.log(btn);
+
+</script>
+</body>
+</html>

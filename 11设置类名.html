@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .hide{
+            display: none;
+        }
+        .show{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="隐藏" id="btn"/>
+
+<div id="box"></div>
+<script>
+    //点击按钮显示盒子
+    var btn = document.getElementById("btn");
+    var box=document.getElementById("box")
+   /* btn.onclick = function () {
+        //给盒子添加类名
+        var box = document.getElementById("box");
+        //console.dir(box);//class在JS中是保留字 所以类名用的是className
+        box.className = "cls";
+    };*/
+    btn.onclick=function(){
+        if(btn.value==="隐藏"){
+            box.className="hide";
+            this.value="显示"
+        }else{
+            box.className="show";
+            this.value="隐藏";
+        }
+    }
+</script>
+</body>
+</html>

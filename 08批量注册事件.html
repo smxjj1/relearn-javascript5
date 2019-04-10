@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="button" class="one"  value="按钮" />
+<input type="button" value="按钮"/>
+<input type="button" value="按钮"/>
+<input type="button" value="按钮"/>
+<!--<script>
+    var inputs = document.getElementsByTagName("input");
+    /*inputs.onclick = function () {
+     alert("a");
+     };*/
+    //console.log(inputs);
+    for (var i = 0; i < inputs.length; i++) {
+        var input = inputs[i];//每一个元素
+        //事件源.事件 = function(){ 事件处理程序 };
+        input.onclick = function () {
+            alert("a");
+        };
+    }
+
+</script>-->
+<script>
+    var inputs = document.getElementsByClassName("one")
+    //事件只能对某一个元素起作用，并不对整个伪数组起作用。要添加事件，必须是伪数组里面的单独元素，即需要通过遍历，将元素取出。
+    /* inputs.onclick=function(){
+     alert("aaaa")
+     }*/
+    for (var i = 0; i < inputs.length; i++) {
+        var input = inputs[i];
+        input.onclick = function () {
+            alert("nice");
+        }
+    }
+
+
+</script>
+</body>
+</html>
+

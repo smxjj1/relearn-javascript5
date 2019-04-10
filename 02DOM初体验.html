@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<img src="images/kitty.png" onclick="changePic()"id="cat" alt=""/>
+<script>
+    // 获取内容
+    //getElementById get Element By Id 获取元素通过id 通过id获取元素
+    var demo = document.getElementById("cat");
+    console.log(demo);//以标签的形式展示
+    console.dir(demo);//以对象的形式展示
+    console.log(demo.src);
+    console.log(typeof demo.src);//string
+   function changePic(){
+       //alert("*")
+       demo.src="images/tiger.png";
+   };
+
+    /* var demo = document.getElementById("demo");
+     console.log(demo);
+     console.dir(demo);
+     console.log(demo.src);*/
+
+</script>
+</body>
+</html>

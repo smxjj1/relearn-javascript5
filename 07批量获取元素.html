@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="button" value="按钮" id="btn"/>
+<input type="button" value="按钮"/>
+<input type="button" value="按钮"/>
+<input type="button" value="按钮"/>
+<!--<script>
+    var btn = document.getElementById("btn");
+    console.log(btn);
+    //getElementsByTagName get Elements By Tag Name 通过标签名获取元素集合
+    var inputs = document.getElementsByTagName("input");//伪数组
+    console.log(inputs);
+    var arr = [1, 2, 3];
+    console.log(arr);
+    console.log(inputs instanceof Array);//不是数组
+    //getElements 获取到的都是 伪数组
+    //getElement 获取到的都是 元素对象
+</script>-->
+<script>
+    var btn =document.getElementById("btn");
+    var butt=document.getElementsByName("input");
+    console.log(butt instanceof Array);
+    console.dir(butt);
+</script>
+</body>
+</html>
