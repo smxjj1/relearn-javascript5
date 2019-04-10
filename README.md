@@ -10,7 +10,6 @@ Document：文档，就是html文件
 getElementById：通过id获取元素
 2.通过console.dir查看元素对象的默认属性
 Console.dir是以对象形式展示元素
-
 Console.log:通过标签形式，可以很方便的定位到页面上的位置
 Console.dir通过对象形式，可以很方便的看到具体属性
 3.理解小猫发威案例的需求；
@@ -19,8 +18,6 @@ Img标签原本的src属性是小猫，然后通过在js中设置img.src属性�
 从此可以知道，标签的属性可以获取也可以设置：
 console.log(demo.src); // 获取属性
 demo.src = "images/tiger.png"; //设置属性
-
-
 学习目标:
 1.使用正确的格式书写代码
 建议将script代码放到body底部，以免出现问题。
